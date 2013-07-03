@@ -1,0 +1,48 @@
+[user]
+    # Set current user
+    name = Xifax
+    email = demi.log@gmail.com
+
+[alias]
+    # Simple ones
+    cp = cherry-pick
+    st = status -sb
+    cl = clone
+    ci = commit
+    co = checkout
+    br = branch
+    diff = diff --word-diff
+    dc = diff --cached
+
+    # Stash operations
+    sl = stash list
+    sa = stash apply
+    ss = stash save
+
+    # List my commits from yesterday
+    standup = log --since yesterday --author 'git config user.email' --pretty=short
+    # Pull and rebase
+    purr = pull --rebase
+    # Check what's going to be pushed (if anything)
+    ready = rebase -i @{u}
+    # Pretty log
+    lg = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+    # List ignored files
+    ignored = ls-files --others -i --exclude-standard
+    # Reset repo to head
+    wipe = reset -hard HEAD
+    # Find file in repo
+    f = "!git ls-files | grep -i"
+    # Show project root
+    root = rev-parse --show-toplevel
+    # List aliases
+    la = "!git config -l | grep alias | cut -c 7-"
+    # List deleted files
+    deleted = log --diff-filter=D --summary
+
+[color]
+    # Enable colors
+    ui = true
+
+[core]
+    editor = /usr/bin/vim
