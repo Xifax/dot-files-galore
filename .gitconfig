@@ -13,6 +13,7 @@
     br = branch
     diff = diff --word-diff
     dc = diff --cached
+    pu = push
 
     # Stash operations
     sl = stash list
