@@ -8,4 +8,4 @@ hash git >/dev/null && /usr/bin/env git clone https://github.com/Xifax/dot-files
 }
 
 # Symlink all dotfiles (except .git)!
-for f in $(ls -d .?*): do ln -s $f ~/; done && ls -al ~/
+for f in $(ls -d .?*); do ln -s $f ~/; done && ls -al ~/
