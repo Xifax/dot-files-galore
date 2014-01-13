@@ -69,7 +69,9 @@ case $OS in
         alias ar="sudo aptitude remove"
         ;;
     Archlinux)
-        # Pacman and Paktahn
+        # Pacman and Paktahn and Yaourt
+        alias ya="yaourt"
+        alias y="yaourt --noconfirm"
         ;;
 esac
 
