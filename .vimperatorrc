@@ -1,4 +1,4 @@
-highlight Hint font-size:120%;color:#f0f8ff;background-color:#5d8aa8;padding:5px;font-family:Roboto;
+highlight Hint font-size:120%;color:#f0f8ff;background-color:#5d8aa8;padding:5px;font-family:Ubuntu Mono;
 highlight Normal -append font-size: 16px;
-highlight Normal -append font-family: Roboto;
+highlight Normal -append font-family: Ubuntu Mono;
 set hintchars=hjklasdfgyuiopqwertnmzxcvb

@@ -4,7 +4,7 @@
 ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load
-ZSH_THEME="robbyrussell"
+ZSH_THEME="random"
 
 # Disable command autocorrection
 DISABLE_CORRECTION="true"
@@ -52,28 +52,20 @@ source $ZSH/oh-my-zsh.sh
 # Update path
 export PATH=$PATH:/home/xifax/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
 
-# Get current OS name
-OS=$(lsb_release -si)
-
 ### Aliases ###
 
 # Edit zsh config
 alias zshconfig="vim ~/.zshrc"
 
 # Package management
-case $OS in
-    Debian)
-        # Aptitude
-        alias ai="sudo aptitude install"
-        alias as="sudo aptitude search"
-        alias ar="sudo aptitude remove"
-        ;;
-    Archlinux)
-        # Pacman and Paktahn and Yaourt
-        alias ya="yaourt"
-        alias y="yaourt --noconfirm"
-        ;;
-esac
+alias ya="yaourt"
+alias y="yaourt --noconfirm"
+
+# System management
+alias ss="sudo systemctl start"
+alias sr="sudo systemctl restart"
+alias se="sudo systemctl enable"
+alias sd="sudo systemctl disable"
 
 # Git
 alias g="git"
