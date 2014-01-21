@@ -49,3 +49,7 @@
     editor = /usr/bin/vim
 [push]
     default = matching
+[github]
+	user = Xifax
+[ghi]
+	token = e199b66606598c0b1260e8d2886f0eb31942a205

@@ -4,7 +4,7 @@
 ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load
-ZSH_THEME="random"
+ZSH_THEME="agnoster"
 
 # Disable command autocorrection
 DISABLE_CORRECTION="true"
