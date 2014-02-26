@@ -23,7 +23,6 @@ coffee
 command-not-found
 composer
 cp
-debian
 gem
 github
 heroku
